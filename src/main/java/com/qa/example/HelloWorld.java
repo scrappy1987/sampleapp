@@ -15,14 +15,14 @@ public class HelloWorld {
     @Path("/json")
     @Produces({ "application/json" })
     public String getHelloWorldJSON() {
-        return "{\"result\":\"" + helloService.createHelloMessage("John") + "\"}";
+        return "{\"result\":\"" + helloService.createHelloMessage("Assad") + "\"}";
     }
 
     @GET
     @Path("/xml")
     @Produces({ "application/xml" })
     public String getHelloWorldXML() {
-        return "<xml><result>" + helloService.createHelloMessage("John") + "</result></xml>";
+        return "<xml><result>" + helloService.createHelloMessage("Assad") + "</result></xml>";
     }
 
 }
